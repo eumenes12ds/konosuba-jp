@@ -1,4 +1,5 @@
 import { tr } from '@/i18n';
+import { normalizeCardYaml } from '@/normalize_card_yaml';
 import { compare } from 'compare-versions';
 import JSON5 from 'json5';
 import { jsonrepair } from 'jsonrepair';
@@ -30,6 +31,7 @@ export function literalYamlify(value: any) {
 
 export function parseString(content: string): any {
     const json_first = /^[[{]/s.test(content.trimStart());
+    if (!json_first) content = normalizeCardYaml(content);
     try {
         if (json_first) {
             throw Error(`expected error`);

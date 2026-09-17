@@ -4,8 +4,8 @@
     "version": null,
     "path": "fonts/huninn.css",
     "upstreamSha256": "dafaab580892e65af9a2f5f92794fccfc25eb87207fe27259d74312fc4dcc641",
-    "sha256": "60aed70265a0c4bc2c52391de502fdc8651858a5a002849527732ba2542d6440",
-    "bytes": 159,
+    "sha256": "b4f4d7181fc1af3e2d3b0edf5c37e4ad0198fef5c3a53a386bccfde4ffa776e4",
+    "bytes": 158,
     "imports": 1
   },
   {
@@ -31,8 +31,8 @@
     "version": "0.185.0",
     "path": "vendor/MagVarUpdate/0.185.0/bundle.js",
     "upstreamSha256": "b0f30a7d269ed5afa8455478c50a64e38c158311872f8c9aa2066b720d68cd2d",
-    "sha256": "571c9d6e6872fe4692b3a85371fea3bd4e7a9d4e0e0cdac4e9b1ca4238aa1202",
-    "bytes": 542647,
+    "sha256": "b90c1ab5867da03c797ffad533500ac21a3622cb90e49b5f0588427c2c7e772f",
+    "bytes": 543314,
     "imports": 51,
     "modification": "Japanese source build; repository-local imports; see source/MagVarUpdate/JAPANESE-CHANGES.md"
   },
@@ -948,8 +948,9 @@
   },
   {
     "upstream": "https://fonts.gstatic.com/s/huninn/v8/OpNNnoINg9bQ4xkpjg.ttf",
-    "path": "fonts/Huninn-Regular.ttf",
-    "sha256": "2f361b882f45d5ecf1162b1726d4fd1148821368f25e63934bf989bf57cf0225",
-    "bytes": 4663064
+    "path": "fonts/Huninn-Regular.woff2",
+    "sha256": "5022d38d154985cb96682ba9b29efa3bd3eba9424eb1a9ce765bff1d3e55c728",
+    "bytes": 2119708,
+    "modification": "Lossless WOFF2 compression of the same Huninn font; original TTF retained in fonts/ for source provenance"
   }
 ]
