@@ -1,0 +1,33 @@
+{
+  "name": "@vue/shared",
+  "version": "3.5.41",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/vuejs/core.git",
+    "type": "git",
+    "directory": "packages/shared"
+  },
+  "dist": {
+    "shasum": "ac476497f74495f7525087270849841756555cf2",
+    "tarball": "https://registry.npmjs.org/@vue/shared/-/shared-3.5.41.tgz",
+    "fileCount": 8,
+    "integrity": "sha512-IOnwSCma8j+9xJT6b8H0dEYidC80NsYmNMlZxRsukYcSoGaDBohog5hDxzeUXdFeGWFA++vWvxqOmrr96VlqMA==",
+    "signatures": [
+      {
+        "sig": "MEUCIC5VWlgEHWMJuA9owYmwIN8+PY8hdk0jvRBkErawIWK8AiEAluZb8fHk2IZEAtUcfT/pmxIo16Y7zhofQiyAFuMyGyQ=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQCvLZosujcxA1u8VjJlOih0hjVGZlUiJFe2qUV12HHVDgIhAMlNx2UZqfSw1CaihPMHzIqv1rKt+nmGIP8eB+DZybaD",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@vue%2fshared@3.5.41",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 88054
+  }
+}

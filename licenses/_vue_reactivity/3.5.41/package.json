@@ -1,0 +1,33 @@
+{
+  "name": "@vue/reactivity",
+  "version": "3.5.41",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/vuejs/core.git",
+    "type": "git",
+    "directory": "packages/reactivity"
+  },
+  "dist": {
+    "shasum": "83be61b88b198f21c157d3aa6dcb843a25a11872",
+    "tarball": "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.5.41.tgz",
+    "fileCount": 12,
+    "integrity": "sha512-rznsqKM0np0x18EjzF8x88MpEhdNsffbvFbckLL5+oUKz1BxAImEmO7J1ArRYSyo6aQaVoBDp7jEkT91OOxydA==",
+    "signatures": [
+      {
+        "sig": "MEYCIQDTHIOj0S58IpYSBj1S01kLKRjDj7unBHdwywcchraxLwIhAK7uBsgmPeEAoacAOSSmVM/GF68yqbv4Gn/ChOaJfXF2",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQDFugr7CqyztMKR950GzFoTlcPBV8cFVZGV06O8SipV6AIhALQrKuS3qmzo0Tk/cWKm+p2x078CRM6RXVYruU+fbUXA",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@vue%2freactivity@3.5.41",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 343894
+  }
+}

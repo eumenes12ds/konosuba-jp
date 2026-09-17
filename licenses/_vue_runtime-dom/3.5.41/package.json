@@ -1,0 +1,33 @@
+{
+  "name": "@vue/runtime-dom",
+  "version": "3.5.41",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/vuejs/core.git",
+    "type": "git",
+    "directory": "packages/runtime-dom"
+  },
+  "dist": {
+    "shasum": "428f7a0420402385fae17d413d25169f98f64205",
+    "tarball": "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.5.41.tgz",
+    "fileCount": 12,
+    "integrity": "sha512-3vVBahVBS9+U6cmXBLyb8nE6/yYo4J/CGI9eVFs3KiMc0YHuudwKyShTD65jtJy/L9PUUxNAFu4cj4LiJ0UFbw==",
+    "signatures": [
+      {
+        "sig": "MEUCIBp7Tgeh9JPVRfhPmd8aSWtkmKNk+65rFPFRvy22oV2TAiEArZijQdBB7gc0gkGDkEITiCpgdOH3npuhdwbSb88/Toc=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQCLi/HDrSCdkP20Y8pMumHTjMa+Lk+6meKtGXrUIKIygAIhAKr2R5TQSXkNlpqUgW0RBo2hUfDzeb2ftGcRz0gEQnqY",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@vue%2fruntime-dom@3.5.41",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 1261426
+  }
+}
