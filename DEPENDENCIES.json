@@ -31,10 +31,10 @@
     "version": "0.185.0",
     "path": "vendor/MagVarUpdate/0.185.0/bundle.js",
     "upstreamSha256": "b0f30a7d269ed5afa8455478c50a64e38c158311872f8c9aa2066b720d68cd2d",
-    "sha256": "b90c1ab5867da03c797ffad533500ac21a3622cb90e49b5f0588427c2c7e772f",
-    "bytes": 543314,
+    "sha256": "a23d81a872c432c12b6a96e5cf9e7c627852e0706bbb41e9d722292caf0393d2",
+    "bytes": 548354,
     "imports": 51,
-    "modification": "Japanese source build; repository-local imports; see source/MagVarUpdate/JAPANESE-CHANGES.md"
+    "modification": "Japanese source build with bidirectional legacy account-settings compatibility; repository-local imports; see source/MagVarUpdate/JAPANESE-CHANGES.md"
   },
   {
     "upstream": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js",
