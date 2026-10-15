@@ -22,7 +22,7 @@ export async function onMessageReceived(
 
     const store = useDataStore();
     if (
-        store.effective_settings.兼容性.sendas不视为user消息 === false &&
+        store.effective_settings.互換性.sendasをuserメッセージとみなさない === false &&
         current_chatmsg.name !== SillyTavern.name2
     ) {
         return;
@@ -47,10 +47,10 @@ export async function onMessageReceived(
         getChatMessages(message_id).at(-1)?.message === expected_content;
 
     if (
-        store.effective_settings.更新方式 === '随AI输出' ||
-        (store.settings.额外模型解析配置.模型来源 === '更多' && !isPiMultiproviderEnabled()) ||
-        (store.settings.额外模型解析配置.应答格式 === '工具调用' &&
-            store.settings.额外模型解析配置.模型来源 !== '更多' &&
+        store.effective_settings.更新方式 === "主AI追従出力" ||
+        (store.settings.追加モデル解析設定.モデル出典 === "その他" && !isPiMultiproviderEnabled()) ||
+        (store.settings.追加モデル解析設定.応答フォーマット === "ツール呼び出し" &&
+            store.settings.追加モデル解析設定.モデル出典 !== "その他" &&
             !isFunctionCallingSupported()) ||
         !(await isExtraModelSupported())
     ) {
@@ -65,7 +65,7 @@ export async function onMessageReceived(
         return;
     }
 
-    if (!force && store.effective_settings.额外模型解析配置.启用自动请求 === false) {
+    if (!force && store.effective_settings.追加モデル解析設定.自動リクエスト有効 === false) {
         console.log(tr('runtime.extraModel.autoRequestDisabledLog'));
         return;
     }
@@ -75,15 +75,15 @@ export async function onMessageReceived(
     }
 
     // MESSAGE_RECEIVED 中立即发起请求。Promise 与目标快照均属于本次调用的闭包。
-    const request_source = store.settings.额外模型解析配置.模型来源;
-    const request_response_format = store.settings.额外模型解析配置.应答格式;
+    const request_source = store.settings.追加モデル解析設定.モデル出典;
+    const request_response_format = store.settings.追加モデル解析設定.応答フォーマット;
     const defer_until_rendered =
         !force &&
-        request_response_format !== '工具调用' &&
-        store.settings.兼容性.额外模型解析非阻塞;
+        request_response_format !== "ツール呼び出し" &&
+        store.settings.互換性.追加モデル解析を非同期化;
     const result_promise = invokeExtraModelWithStrategy().catch(error => {
         // 错误提示描述实际发起的请求，避免等待期间面板切换导致错误归类失真。
-        if (request_source === '更多') {
+        if (request_source === "その他") {
             toastr.error(
                 getPiRequestFailureToastMessage(error, request_response_format),
                 tr('runtime.extraModel.updateFailedTitle')
@@ -103,7 +103,7 @@ export async function onMessageReceived(
             result === null ? message_content : message_content.trimEnd() + '\n\n' + result;
         if (result !== null) {
             await setChatMessages([{ message_id, message: updated_content }], { refresh: 'none' });
-        } else if (request_source !== '更多') {
+        } else if (request_source !== "その他") {
             toastr.error(
                 tr('runtime.extraModel.updateFailed'),
                 tr('runtime.extraModel.updateFailedTitle')
