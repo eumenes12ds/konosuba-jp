@@ -143,7 +143,7 @@ export const runtimeMessages = defineMessages({
         en: 'The current character card does not support extra-model parsing',
     },
     'runtime.button.extraModelRetryTitle': {
-        'zh-CN': '[MVU]重试额外模型解析',
+        'zh-CN': "[MVU]追加モデル解析を再試行",
         en: '[MVU] Retry extra-model parsing',
     },
     'runtime.button.extraModelParsingCompleted': {
@@ -342,7 +342,7 @@ export const runtimeMessages = defineMessages({
         en: 'New lorebook initialization variables were loaded. Active lorebooks:<br>{books}',
     },
     'runtime.initvar.initializationSucceededTitle': {
-        'zh-CN': '[MVU]变量初始化成功',
+        'zh-CN': "[MVU]変数初期化成功",
         en: '[MVU] Variable initialization succeeded',
     },
     'runtime.initvar.primaryLorebookReadFailedLog': {
@@ -385,7 +385,7 @@ export const runtimeMessages = defineMessages({
     },
     'runtime.notification.customApiOptionsBody': {
         'zh-CN':
-            'MVU 现在可以自定义 API 的温度、频率惩罚、存在惩罚和最大回复 token 数；需要酒馆助手版本 >= 4.0.14。',
+            "MVU 现在可以自定义 API 的温度、頻度ペナルティ、存在惩罚和最大回复 token 数；需要酒馆助手版本 >= 4.0.14。",
         en: 'MVU now supports custom API temperature, frequency penalty, presence penalty, and maximum response tokens. TavernHelper >= 4.0.14 is required.',
     },
     'runtime.notification.cleanupDefaultTitle': {
@@ -402,7 +402,7 @@ export const runtimeMessages = defineMessages({
     },
     'runtime.notification.builtinJailbreakBody': {
         'zh-CN':
-            '现在，额外模型解析如果取消“发送预设”，则会使用内置的破限提示词——既避免写作任务又避免道歉。',
+            "现在，额外模型解析如果取消“プリセット送信”，则会使用内置的破限提示词——既避免写作任务又避免道歉。",
         en: 'When Send Preset is disabled, extra-model parsing now uses a built-in jailbreak prompt designed to avoid both writing tasks and refusals.',
     },
     'runtime.notification.concurrentRequestsTitle': {
@@ -411,7 +411,7 @@ export const runtimeMessages = defineMessages({
     },
     'runtime.notification.concurrentRequestsBody': {
         'zh-CN':
-            '现在，你可以在“变量更新方式 → 请求策略 → 请求方式”中选择并发请求，提高额外模型解析成功率并节省时间。',
+            "现在，你可以在“变量更新方式 → 请求策略 → リクエスト方式”中选择并发请求，提高额外模型解析成功率并节省时间。",
         en: 'You can now choose concurrent requests under Variable Update Method → Request Strategy → Request Method to improve extra-model parsing success rates and save time.',
     },
     'runtime.notification.buildInfo': {
@@ -424,7 +424,7 @@ export const runtimeMessages = defineMessages({
     },
 
     'runtime.filter.toolCallingUnsupported': {
-        'zh-CN': '当前 TavernHelper 版本或预设/API 不支持工具调用，已退化回 `随AI输出`',
+        'zh-CN': "当前 TavernHelper 版本或预设/API 不支持工具调用，已退化回 `主AI追従出力`",
         en: 'The current TavernHelper version or preset/API does not support tool calling. Falling back to Follow AI Output.',
     },
     'runtime.filter.toolCallingUnsupportedTitle': {
@@ -432,11 +432,11 @@ export const runtimeMessages = defineMessages({
         en: '[MVU] Tool calling unavailable',
     },
     'runtime.filter.globalSettingsSource': {
-        'zh-CN': '用户全局配置',
+        'zh-CN': "ユーザー共通設定",
         en: 'global user settings',
     },
     'runtime.filter.characterSettingsSource': {
-        'zh-CN': '角色卡配置',
+        'zh-CN': "キャラクターカード設定",
         en: 'character-card settings',
     },
     'runtime.filter.whitelistRegexLabel': {
@@ -473,7 +473,7 @@ export const runtimeMessages = defineMessages({
         en: 'The character lorebook could not be found. Extra-model parsing is unavailable in group chats.',
     },
     'runtime.extraModel.v4RequiresCustomSource': {
-        'zh-CN': '[MVU额外模型解析]格式化输出(v4兼容)需要额外模型来源为自定义，不能与插头相同。',
+        'zh-CN': "[MVU额外模型解析]フォーマット出力(v4兼容)需要额外模型来源为自定义，不能与插头相同。",
         en: '[MVU extra-model parsing] Formatted Output (v4 Compatible) requires a Custom model source and cannot use Same as Primary Connection.',
     },
     'runtime.extraModel.customIncludeBodyInvalid': {
@@ -543,40 +543,40 @@ export const runtimeMessages = defineMessages({
 
     // Pi 运行时统一错误文案：只插入经过分类的参数，不拼接服务商原始响应或认证信息。
     'runtime.pi.invalidConfig': {
-        'zh-CN': '“更多”配置无效，请检查其中的来源、API 和认证设置。',
+        'zh-CN': "“その他”配置无效，请检查其中的来源、API 和认证设置。",
         en: 'The More-source configuration is invalid. Check its provider, API, and authentication settings.',
     },
     'runtime.pi.unknownProvider': {
-        'zh-CN': '“更多”中所选来源不可用，请重新选择来源。',
+        'zh-CN': "“その他”中所选来源不可用，请重新选择来源。",
         en: 'The selected provider under More is unavailable. Select a provider again.',
     },
     'runtime.pi.unsupportedApi': {
-        'zh-CN': '“更多”中所选来源不支持当前 API，请改用该来源支持的 API。',
+        'zh-CN': "“その他”中所选来源不支持当前 API，请改用该来源支持的 API。",
         en: 'The selected provider under More does not support the current API. Choose an API supported by this provider.',
     },
     'runtime.pi.unsupportedAuth': {
-        'zh-CN': '“更多”中所选来源不支持当前认证方式，请改用该来源支持的认证方式。',
+        'zh-CN': "“その他”中所选来源不支持当前认证方式，请改用该来源支持的认证方式。",
         en: 'The selected provider under More does not support the current authentication method. Choose a supported method.',
     },
     'runtime.pi.missingApiKey': {
-        'zh-CN': '请输入“更多”中所选来源的 API Key。',
+        'zh-CN': "请输入“その他”中所选来源的 API Key。",
         en: 'Enter an API key for the selected provider under More.',
     },
     'runtime.pi.missingOAuthCredential': {
-        'zh-CN': '“更多”中所选来源尚未完成 OAuth 登录，请先登录。',
+        'zh-CN': "“その他”中所选来源尚未完成 OAuth 登录，请先登录。",
         en: 'The selected provider under More is not signed in with OAuth. Sign in before retrying.',
     },
     'runtime.pi.oauthCredentialExpired': {
-        'zh-CN': '“更多”的 OAuth 凭据已过期且无法刷新，请登出后再登录。',
+        'zh-CN': "“その他”的 OAuth 凭据已过期且无法刷新，请登出后再登录。",
         en: 'The OAuth credential for More has expired and could not be refreshed. Sign out, then sign in again.',
     },
     'runtime.pi.invalidEndpoint': {
         'zh-CN':
-            '自定义 endpoint 必须使用 HTTPS；HTTP 仅允许 localhost、127.0.0.1 或 [::1]，且不能包含凭据、查询参数或片段。',
+            "カスタム endpoint 必须使用 HTTPS；HTTP 仅允许 localhost、127.0.0.1 或 [::1]，且不能包含凭据、查询参数或片段。",
         en: 'The custom endpoint must use HTTPS. HTTP is limited to localhost, 127.0.0.1, or [::1]. Credentials, query parameters, and fragments are not allowed.',
     },
     'runtime.pi.customEndpointNotAllowed': {
-        'zh-CN': '“更多”中所选来源使用固定 endpoint，不允许自定义。',
+        'zh-CN': "“その他”中所选来源使用固定 endpoint，不允许自定义。",
         en: 'The selected provider under More uses a fixed endpoint and does not allow a custom one.',
     },
     'runtime.pi.oauthEndpointNotAllowed': {
@@ -588,7 +588,7 @@ export const runtimeMessages = defineMessages({
         en: 'This OAuth provider can only use its locked compatible API. Reselect the provider or authentication method.',
     },
     'runtime.pi.missingModel': {
-        'zh-CN': '请填写“更多”来源的模型名称。',
+        'zh-CN': "请填写“その他”来源的模型名称。",
         en: 'Enter a model name for the More source.',
     },
     'runtime.pi.invalidContextWindow': {
@@ -596,7 +596,7 @@ export const runtimeMessages = defineMessages({
         en: 'contextWindow must be a positive integer.',
     },
     'runtime.pi.missingContextWindow': {
-        'zh-CN': '当前模型不在“更多”的内置目录中，请手动填写有效的 contextWindow。',
+        'zh-CN': "当前模型不在“その他”的内置目录中，请手动填写有效的 contextWindow。",
         en: 'The current model is not in the built-in catalog under More. Enter a valid contextWindow manually.',
     },
     'runtime.pi.invalidMaxTokens': {
@@ -612,87 +612,87 @@ export const runtimeMessages = defineMessages({
         en: 'Adjust either temperature or top_p for Anthropic. Reset the other to its default value of 1.',
     },
     'runtime.pi.customHeadersInvalid': {
-        'zh-CN': '“更多”的自定义请求头必须是 YAML/JSON 对象，且值只能是字符串或 null。',
+        'zh-CN': "“その他”的自定义请求头必须是 YAML/JSON 对象，且值只能是字符串或 null。",
         en: 'Custom headers under More must be a YAML/JSON object whose values are strings or null.',
     },
     'runtime.pi.customConfigParseFailed': {
-        'zh-CN': '“更多”的自定义请求配置不是有效的 YAML 或 JSON，请检查格式。',
+        'zh-CN': "“その他”的自定义请求配置不是有效的 YAML 或 JSON，请检查格式。",
         en: 'The custom request settings under More are not valid YAML or JSON. Check their formatting.',
     },
     'runtime.pi.customIncludeBodyInvalid': {
-        'zh-CN': '“更多”的自定义请求体必须是 YAML/JSON 对象。',
+        'zh-CN': "“その他”的自定义请求体必须是 YAML/JSON 对象。",
         en: 'The custom request body under More must be a YAML/JSON object.',
     },
     'runtime.pi.customExcludeBodyInvalid': {
-        'zh-CN': '“更多”的排除请求字段必须是 YAML/JSON 字段名数组。',
+        'zh-CN': "“その他”的排除请求字段必须是 YAML/JSON 字段名数组。",
         en: 'Excluded request fields under More must be a YAML/JSON array of field names.',
     },
     'runtime.pi.customPayloadProtectedField': {
-        'zh-CN': '“更多”的自定义请求配置不能覆盖、排除或设置认证及关键协议字段。',
+        'zh-CN': "“その他”的自定义请求配置不能覆盖、排除或设置认证及关键协议字段。",
         en: 'Custom request settings under More cannot override, exclude, or set authentication or other protected protocol fields.',
     },
     'runtime.pi.payloadInvalid': {
-        'zh-CN': '“更多”来源的请求体必须是对象，请检查 API 配置。',
+        'zh-CN': "“その他”来源的请求体必须是对象，请检查 API 配置。",
         en: 'The provider payload under More must be an object. Check the API configuration.',
     },
     'runtime.pi.structuredOutputSchemaMissing': {
-        'zh-CN': '“更多”的格式化输出需要有效的 JSON Schema。',
+        'zh-CN': "“その他”的格式化输出需要有效的 JSON Schema。",
         en: 'Formatted output under More requires a valid JSON Schema.',
     },
     'runtime.pi.structuredOutputUnsupported': {
-        'zh-CN': '“更多”中当前来源、API 或模型不支持原生格式化输出，请更换配置后重试。',
+        'zh-CN': "“その他”中当前来源、API 或模型不支持原生格式化输出，请更换配置后重试。",
         en: 'The current provider, API, or model under More does not support native formatted output. Change the configuration and retry.',
     },
     'runtime.pi.toolCallingUnsupported': {
-        'zh-CN': '“更多”中当前来源、API 或模型不支持所需的工具调用模式，请更换配置后重试。',
+        'zh-CN': "“その他”中当前来源、API 或模型不支持所需的工具调用模式，请更换配置后重试。",
         en: 'The current provider, API, or model under More does not support the required tool-calling mode. Change the configuration and retry.',
     },
     'runtime.pi.toolRequestRejected': {
         'zh-CN':
-            '目标端点未接受“工具调用”请求。请确认该端点和模型支持工具调用，并检查 API 类型、地址和模型名。',
+            "目标端点未接受“ツール呼び出し”请求。请确认该端点和模型支持工具调用，并检查 API 类型、地址和模型名。",
         en: 'The target endpoint did not accept the tool-calling request. Confirm that the endpoint and model support tool calling, and check the API type, URL, and model name.',
     },
     'runtime.pi.structuredOutputRequestRejected': {
         'zh-CN':
-            '目标端点未接受“格式化输出”请求。请确认该端点和模型支持 JSON Schema 格式化输出，并检查 API 类型、地址和模型名。',
+            "目标端点未接受“フォーマット出力”请求。请确认该端点和模型支持 JSON Schema フォーマット出力，并检查 API 类型、地址和模型名。",
         en: 'The target endpoint did not accept the formatted-output request. Confirm that the endpoint and model support JSON Schema formatted output, and check the API type, URL, and model name.',
     },
     'runtime.pi.jsonObjectRequestRejected': {
         'zh-CN':
-            '目标端点未接受“格式化输出(v4兼容)”请求。请确认该端点和模型支持 JSON Object 输出，并检查 API 类型、地址和模型名。',
+            "目标端点未接受“フォーマット出力(v4兼容)”请求。请确认该端点和模型支持 JSON Object 输出，并检查 API 类型、地址和模型名。",
         en: 'The target endpoint did not accept the v4-compatible formatted-output request. Confirm that the endpoint and model support JSON Object output, and check the API type, URL, and model name.',
     },
     'runtime.pi.namedToolChoiceUnsupported': {
-        'zh-CN': '“更多”中的当前 API 不支持指定工具调用，请更换 API 或调整工具选择方式。',
+        'zh-CN': "“その他”中的当前 API 不支持指定工具调用，请更换 API 或调整工具选择方式。",
         en: 'The current API under More does not support named tool choice. Choose another API or adjust the tool-choice mode.',
     },
     'runtime.pi.invalidToolDefinition': {
         'zh-CN':
-            '“更多”来源的工具定义无效：function name 不能为空，且 parameters 根节点必须是 object。',
+            "“その他”来源的工具定义无效：function name 不能为空，且 parameters 根节点必须是 object。",
         en: 'The tool definition under More is invalid: function name cannot be empty, and the parameters root must be an object.',
     },
     'runtime.pi.invalidToolCall': {
-        'zh-CN': '“更多”来源返回了无效的工具调用，请重试或更换模型。',
+        'zh-CN': "“その他”来源返回了无效的工具调用，请重试或更换模型。",
         en: 'The More source returned an invalid tool call. Retry or choose another model.',
     },
     'runtime.pi.toolUseMissingCall': {
-        'zh-CN': '“更多”来源以工具调用结束，但没有返回工具调用内容，请重试或更换模型。',
+        'zh-CN': "“その他”来源以工具调用结束，但没有返回工具调用内容，请重试或更换模型。",
         en: 'The More source stopped for tool use without returning a tool call. Retry or choose another model.',
     },
     'runtime.pi.imageInputUnsupported': {
-        'zh-CN': '“更多”中的当前模型不支持图片输入，请移除图片或更换模型。',
+        'zh-CN': "“その他”中的当前模型不支持图片输入，请移除图片或更换模型。",
         en: 'The current model under More does not support image input. Remove the image or choose another model.',
     },
     'runtime.pi.contextInvalidImage': {
-        'zh-CN': '“更多”的图片输入必须是可解码的 image/* base64 data URL。',
+        'zh-CN': "“その他”的图片输入必须是可解码的 image/* base64 data URL。",
         en: 'Image input under More must be a decodable image/* base64 data URL.',
     },
     'runtime.pi.remoteImageUnsupported': {
-        'zh-CN': '“更多”当前不支持远程图片 URL，请改用 base64 data URL。',
+        'zh-CN': "“その他”当前不支持远程图片 URL，请改用 base64 data URL。",
         en: 'The More source does not currently support remote image URLs. Use a base64 data URL instead.',
     },
     'runtime.pi.videoUnsupported': {
-        'zh-CN': '“更多”链路当前不支持视频内容，请移除视频后重试。',
+        'zh-CN': "“その他”链路当前不支持视频内容，请移除视频后重试。",
         en: 'The More path does not currently support video content. Remove the video and retry.',
     },
     'runtime.pi.contextSystemPayloadMismatch': {
@@ -704,7 +704,7 @@ export const runtimeMessages = defineMessages({
         en: 'Historical tool result {index} has no matching tool call. Check the chat history.',
     },
     'runtime.pi.contextUnsupportedContent': {
-        'zh-CN': '第 {index} 条消息包含“更多”当前不支持的内容，请移除该内容后重试。',
+        'zh-CN': "第 {index} 条消息包含“その他”当前不支持的内容，请移除该内容后重试。",
         en: 'Message {index} contains content that More does not currently support. Remove it and retry.',
     },
     'runtime.pi.promptCaptureFailed': {
@@ -712,7 +712,7 @@ export const runtimeMessages = defineMessages({
         en: 'Could not capture the final prompt built by SillyTavern. Retry and check the logs.',
     },
     'runtime.pi.requestAlreadyActive': {
-        'zh-CN': '同一“更多”请求已在运行，请等待它结束或先停止该请求。',
+        'zh-CN': "同一“その他”请求已在运行，请等待它结束或先停止该请求。",
         en: 'The same More-source request is already running. Wait for it to finish or stop it first.',
     },
     'runtime.pi.tokenBudgetExceeded': {
@@ -721,12 +721,12 @@ export const runtimeMessages = defineMessages({
         en: 'The request is estimated to use {estimatedInput} input tokens. Together with {maxTokens} response tokens and {reserve} reserved tokens, it exceeds the {contextWindow}-token context window. Shorten chat history, reduce maximum response tokens, or correct contextWindow.',
     },
     'runtime.pi.requestAborted': {
-        'zh-CN': '“更多”请求已取消。',
+        'zh-CN': "“その他”请求已取消。",
         en: 'The More-source request was cancelled.',
     },
     'runtime.pi.browserNetworkError': {
         'zh-CN':
-            '浏览器无法连接“更多”中所选来源。请检查网络、地址配置，并确认来源允许浏览器 CORS 请求。',
+            "浏览器无法连接“その他”中所选来源。请检查网络、地址配置，并确认来源允许浏览器 CORS 请求。",
         en: 'The browser could not reach the selected provider under More. Check the network and address settings, and confirm that the provider allows browser CORS requests.',
     },
     'runtime.pi.proxyUnavailable': {
@@ -735,35 +735,35 @@ export const runtimeMessages = defineMessages({
         en: 'Proxy is not enabled. Enable enableCorsProxy in SillyTavern config.yaml, or start SillyTavern with --corsProxy, then restart SillyTavern.',
     },
     'runtime.pi.requestFailed': {
-        'zh-CN': '“更多”来源请求失败。请检查来源配置、凭据和网络后重试。',
+        'zh-CN': "“その他”来源请求失败。请检查来源配置、凭据和网络后重试。",
         en: 'The provider request under More failed. Check the provider settings, credentials, and network, then retry.',
     },
     'runtime.pi.featureDisabled': {
-        'zh-CN': '此构建已关闭“更多”模型来源；请选择“与插头相同”或“自定义”。',
+        'zh-CN': "此构建已关闭“その他”モデル出典；请选择“プラグと同じ”或“カスタム”。",
         en: 'The More model source is disabled in this build. Select Same as current connection or Custom.',
     },
     'runtime.pi.protocolError': {
-        'zh-CN': '“更多”来源返回了无效的协议数据，请重试或更换来源/API。',
+        'zh-CN': "“その他”来源返回了无效的协议数据，请重试或更换来源/API。",
         en: 'The provider under More returned invalid protocol data. Retry or choose another provider/API.',
     },
     'runtime.pi.lengthTruncated': {
-        'zh-CN': '“更多”回复因达到长度上限而被截断，请增加最大回复 token 数或缩短请求内容。',
+        'zh-CN': "“その他”回复因达到长度上限而被截断，请增加最大回复 token 数或缩短请求内容。",
         en: 'The response from More was truncated at the length limit. Increase maximum response tokens or shorten the request content.',
     },
     'runtime.pi.emptyResponse': {
-        'zh-CN': '“更多”来源返回了空回复，请重试或更换模型。',
+        'zh-CN': "“その他”来源返回了空回复，请重试或更换模型。",
         en: 'The More source returned an empty response. Retry or choose another model.',
     },
     'runtime.pi.thinkingOnlyResponse': {
-        'zh-CN': '“更多”回复仅包含 thinking，没有可用的业务内容，请重试或更换模型。',
+        'zh-CN': "“その他”回复仅包含 thinking，没有可用的业务内容，请重试或更换模型。",
         en: 'The response from More contained only thinking and no usable content. Retry or choose another model.',
     },
     'runtime.pi.deferredResponse': {
-        'zh-CN': '“更多”回复尚未完成，当前不支持 deferred 结果。',
+        'zh-CN': "“その他”回复尚未完成，当前不支持 deferred 结果。",
         en: 'The response from More is not complete; deferred results are not currently supported.',
     },
     'runtime.pi.oauth.cancelled': {
-        'zh-CN': '“更多”的 OAuth 操作已取消，原凭据未更改。',
+        'zh-CN': "“その他”的 OAuth 操作已取消，原凭据未更改。",
         en: 'The OAuth operation under More was cancelled. The existing credential was not changed.',
     },
     'runtime.pi.oauth.browserUnavailable': {
@@ -772,7 +772,7 @@ export const runtimeMessages = defineMessages({
         en: 'Fetch or Web Crypto required for OAuth is unavailable. Retry in a supported secure browser context.',
     },
     'runtime.pi.oauth.unsupportedProvider': {
-        'zh-CN': '“更多”中所选来源不支持浏览器 OAuth 登录，请改用 API Key 或其他来源。',
+        'zh-CN': "“その他”中所选来源不支持浏览器 OAuth 登录，请改用 API Key 或其他来源。",
         en: 'The selected provider under More does not support browser OAuth sign-in. Use an API key or another provider.',
     },
     'runtime.pi.oauth.invalidCallback': {
@@ -814,7 +814,7 @@ export const runtimeMessages = defineMessages({
         en: 'The OAuth sign-in attempt has ended or its callback URL was already used. Start a new sign-in.',
     },
     'runtime.pi.oauth.credentialStore': {
-        'zh-CN': '无法读取或保存“更多”的 OAuth 凭据，请检查浏览器存储后重试。',
+        'zh-CN': "无法读取或保存“その他”的 OAuth 凭据，请检查浏览器存储后重试。",
         en: 'The OAuth credential for More could not be read or saved. Check browser storage and retry.',
     },
 
@@ -936,7 +936,7 @@ export const runtimeMessages = defineMessages({
         en: 'API profile “{name}” already exists',
     },
     'runtime.apiProfile.piConfigRequired': {
-        'zh-CN': '“更多”API 方案缺少完整的连接配置，无法保存。',
+        'zh-CN': "“その他”API 方案缺少完整的连接配置，无法保存。",
         en: 'A More-source API profile requires a complete connection snapshot before it can be saved.',
     },
     'runtime.apiProfile.enterNewName': {

@@ -34,7 +34,7 @@ export const panelMessages = defineMessages({
         en: 'Notify while extra-model parsing is running',
     },
     'panel.cleanup.section': {
-        'zh-CN': '自动清理变量',
+        'zh-CN': "自動クリーンアップ変数",
         en: 'Automatic variable cleanup',
     },
     'panel.cleanup.enable': {
@@ -46,19 +46,19 @@ export const panelMessages = defineMessages({
         en: 'Cleanup strategy',
     },
     'panel.cleanup.snapshotInterval': {
-        'zh-CN': '快照保留间隔',
+        'zh-CN': "スナップショット保持間隔",
         en: 'Snapshot retention interval',
     },
     'panel.cleanup.recentFloors': {
-        'zh-CN': '要保留变量的最近楼层数',
+        'zh-CN': "保持する変数の最近階層スタック数",
         en: 'Recent floors whose variables are retained',
     },
     'panel.cleanup.restoreFloors': {
-        'zh-CN': '触发恢复变量的最近楼层数',
+        'zh-CN': "復元をトリガーする変数の最近階層スタック数",
         en: 'Recent floors that trigger variable restoration',
     },
     'panel.compatibility.section': {
-        'zh-CN': '兼容性',
+        'zh-CN': "互換性",
         en: 'Compatibility',
     },
     'panel.compatibility.updateChatVariables': {
@@ -71,7 +71,7 @@ export const panelMessages = defineMessages({
         en: 'When enabled, every variable update is also written to chat variables. Enable this if some older character cards do not work correctly.',
     },
     'panel.compatibility.showLegacy': {
-        'zh-CN': '显示老旧功能',
+        'zh-CN': "旧機能を表示",
         en: 'Show legacy features',
     },
     'panel.compatibility.sendasNotUser': {
@@ -113,27 +113,27 @@ export const panelMessages = defineMessages({
         en: 'Repair actions',
     },
     'panel.button.reprocessVariables': {
-        'zh-CN': '重新处理变量',
+        'zh-CN': "変数を再処理",
         en: 'Reprocess variables',
     },
     'panel.button.reloadInitialVariables': {
-        'zh-CN': '重新读取初始变量',
+        'zh-CN': "初期変数を再読み込み",
         en: 'Reload initial variables',
     },
     'panel.button.snapshotFloor': {
-        'zh-CN': '快照楼层',
+        'zh-CN': "スナップショット階層",
         en: 'Snapshot floor',
     },
     'panel.button.replayFloor': {
-        'zh-CN': '重演楼层',
+        'zh-CN': "階層を再演",
         en: 'Replay floor',
     },
     'panel.button.retryExtraModelParsing': {
-        'zh-CN': '重试额外模型解析',
+        'zh-CN': "追加モデル解析を再試行",
         en: 'Retry extra-model parsing',
     },
     'panel.button.clearOldFloorVariables': {
-        'zh-CN': '清除旧楼层变量',
+        'zh-CN': "古い階層の変数をクリア",
         en: 'Clear variables from old floors',
     },
     'panel.help.ariaLabel': {
@@ -161,7 +161,7 @@ export const panelMessages = defineMessages({
         en: 'Alongside AI output',
     },
     'panel.update.method.extraModel': {
-        'zh-CN': '额外模型解析',
+        'zh-CN': "追加モデル解析",
         en: 'Extra-model parsing',
     },
     'panel.update.method.unsupportedWarning': {
@@ -215,19 +215,19 @@ export const panelMessages = defineMessages({
         en: 'Request content',
     },
     'panel.prompt.jailbreakStrategy': {
-        'zh-CN': '破限方案',
+        'zh-CN': "脱獄方案",
         en: 'Jailbreak strategy',
     },
     'panel.prompt.jailbreak.builtin': {
-        'zh-CN': '使用内置破限',
+        'zh-CN': "内蔵脱獄を使用",
         en: 'Use built-in jailbreak',
     },
     'panel.prompt.jailbreak.currentPreset': {
-        'zh-CN': '使用当前预设',
+        'zh-CN': "現在のプリセットを使用",
         en: 'Use current preset',
     },
     'panel.prompt.jailbreak.otherPreset': {
-        'zh-CN': '使用其他预设',
+        'zh-CN': "その他のプリセットを使用",
         en: 'Use another preset',
     },
     'panel.prompt.targetPreset': {
@@ -239,7 +239,7 @@ export const panelMessages = defineMessages({
         en: 'No available saved presets detected',
     },
     'panel.prompt.randomHeader': {
-        'zh-CN': '随机头部',
+        'zh-CN': "ランダムヘッダー",
         en: 'Randomized header',
     },
     'panel.prompt.randomHeaderHelp': {
@@ -248,23 +248,23 @@ export const panelMessages = defineMessages({
         en: 'Gemini-family models may record the jailbreak header, so a random number is added to it. Disable this for non-Gemini models to avoid invalidating the prompt cache.',
     },
     'panel.prompt.responseFormat': {
-        'zh-CN': '应答格式',
+        'zh-CN': "応答フォーマット",
         en: 'Response format',
     },
     'panel.prompt.response.chatMessage': {
-        'zh-CN': '聊天消息',
+        'zh-CN': "チャットメッセージ",
         en: 'Chat message',
     },
     'panel.prompt.response.toolCall': {
-        'zh-CN': '工具调用',
+        'zh-CN': "ツール呼び出し",
         en: 'Tool call',
     },
     'panel.prompt.response.structured': {
-        'zh-CN': '格式化输出',
+        'zh-CN': "フォーマット出力",
         en: 'Structured output',
     },
     'panel.prompt.response.structuredV4': {
-        'zh-CN': '格式化输出（v4 兼容）',
+        'zh-CN': "フォーマット出力（v4 兼容）",
         en: 'Structured output (v4 compatible)',
     },
     'panel.prompt.disableThinking': {
@@ -280,7 +280,7 @@ export const panelMessages = defineMessages({
         en: 'Disable',
     },
     'panel.prompt.fakeStreaming': {
-        'zh-CN': '兼容假流式',
+        'zh-CN': "疑似ストリーミング互換",
         en: 'Pseudo-streaming compatibility',
     },
     'panel.prompt.fakeStreamingHelp': {
@@ -289,7 +289,7 @@ export const panelMessages = defineMessages({
         en: 'Disabled by default: wait for the complete response. Enable this if your provider requires streaming or requests often time out while waiting. Variables are still updated after the full response arrives. OpenAI Codex requires streaming and always uses it.',
     },
     'panel.prompt.whitelist': {
-        'zh-CN': '世界书条目白名单正则',
+        'zh-CN': "ワールドブックエントリホワイトリスト正規表現",
         en: 'World-book entry whitelist regex',
     },
     'panel.prompt.whitelistHelp': {
@@ -302,7 +302,7 @@ export const panelMessages = defineMessages({
         en: 'character{or}location or /character{or}location/i',
     },
     'panel.prompt.blacklist': {
-        'zh-CN': '世界书条目黑名单正则',
+        'zh-CN': "ワールドブックエントリブラックリスト正規表現",
         en: 'World-book entry blacklist regex',
     },
     'panel.prompt.blacklistHelp': {
@@ -363,23 +363,23 @@ export const panelMessages = defineMessages({
         en: 'Persona world book',
     },
     'panel.prompt.filtered.whitelistReason': {
-        'zh-CN': '白名单',
+        'zh-CN': "許可リスト",
         en: 'Whitelist',
     },
     'panel.prompt.filtered.blacklistReason': {
-        'zh-CN': '黑名单',
+        'zh-CN': "拒否リスト",
         en: 'Blacklist',
     },
     'panel.prompt.filtered.globalConfig': {
-        'zh-CN': '用户全局配置',
+        'zh-CN': "ユーザー共通設定",
         en: 'User global settings',
     },
     'panel.prompt.filtered.characterConfig': {
-        'zh-CN': '角色卡配置',
+        'zh-CN': "キャラクターカード設定",
         en: 'Character-card settings',
     },
     'panel.prompt.toolCallUnavailableTitle': {
-        'zh-CN': "[MVU]无法使用'工具调用'",
+        'zh-CN': "[MVU]无法使用'ツール呼び出し'",
         en: "[MVU] Cannot use 'Tool call'",
     },
     'panel.prompt.toolCallUnsupported': {
@@ -387,11 +387,11 @@ export const panelMessages = defineMessages({
         en: 'The current API source does not support tool calls. Choose a provider/model that supports tools, or use another response format.',
     },
     'panel.prompt.structuredV4UnavailableTitle': {
-        'zh-CN': "[MVU]无法使用'格式化输出(v4兼容)'",
+        'zh-CN': "[MVU]无法使用'フォーマット出力(v4兼容)'",
         en: "[MVU] Cannot use 'Structured output (v4 compatible)'",
     },
     'panel.prompt.structuredV4RequiresCustom': {
-        'zh-CN': '格式化输出(v4兼容)需要额外模型来源为自定义，不能与插头相同',
+        'zh-CN': "フォーマット出力(v4兼容)需要额外模型来源为自定义，不能与插头相同",
         en: 'Structured output (v4 compatible) requires a custom extra-model source and cannot use the current connection.',
     },
     'panel.request.section': {
@@ -399,15 +399,15 @@ export const panelMessages = defineMessages({
         en: 'Request strategy',
     },
     'panel.request.method': {
-        'zh-CN': '请求方式',
+        'zh-CN': "リクエスト方式",
         en: 'Request method',
     },
     'panel.request.sequential': {
-        'zh-CN': '依次请求，失败后重试',
+        'zh-CN': "順番にリクエストし、失敗したら再試行",
         en: 'Request sequentially and retry on failure',
     },
     'panel.request.parallel': {
-        'zh-CN': '同时请求多次',
+        'zh-CN': "同時に複数回リクエスト",
         en: 'Send multiple requests in parallel',
     },
     'panel.request.onceThenParallel': {
@@ -415,7 +415,7 @@ export const panelMessages = defineMessages({
         en: 'Request once, then retry in parallel on failure',
     },
     'panel.request.count': {
-        'zh-CN': '请求次数',
+        'zh-CN': "リクエスト回数",
         en: 'Number of requests',
     },
     'panel.request.auto': {
@@ -424,7 +424,7 @@ export const panelMessages = defineMessages({
     },
     'panel.request.autoHelp': {
         'zh-CN':
-            '关闭后，AI 回复完成时不会自动触发额外模型解析；你需要主动点击“重试额外模型解析”按钮，才会执行解析并添加状态栏占位符 &lt;StatusPlaceHolderImpl/&gt;。',
+            "关闭后，AI 回复完成时不会自动触发额外模型解析；你需要主动点击“追加モデル解析を再試行”按钮，才会执行解析并添加状态栏占位符 &lt;StatusPlaceHolderImpl/&gt;。",
         en: 'When disabled, extra-model parsing is not triggered automatically after the AI finishes replying. Click “Retry extra-model parsing” to run it and add the status-bar placeholder &lt;StatusPlaceHolderImpl/&gt;.',
     },
     'panel.request.batchWarning': {
@@ -437,19 +437,19 @@ export const panelMessages = defineMessages({
         en: '[MVU] Batch requests may not work correctly',
     },
     'panel.source.section': {
-        'zh-CN': '模型来源',
+        'zh-CN': "モデル出典",
         en: 'Model source',
     },
     'panel.source.sameAsConnection': {
-        'zh-CN': '与插头相同',
+        'zh-CN': "プラグと同じ",
         en: 'Same as current connection',
     },
     'panel.source.custom': {
-        'zh-CN': '自定义',
+        'zh-CN': "カスタム",
         en: 'Custom',
     },
     'panel.source.more': {
-        'zh-CN': '更多',
+        'zh-CN': "その他",
         en: 'More',
     },
     'panel.source.profile.section': {
@@ -485,11 +485,11 @@ export const panelMessages = defineMessages({
         en: 'Delete current profile',
     },
     'panel.source.profile.backendCustom': {
-        'zh-CN': '自定义 API',
+        'zh-CN': "カスタム API",
         en: 'Custom API',
     },
     'panel.source.profile.backendPi': {
-        'zh-CN': '更多',
+        'zh-CN': "その他",
         en: 'More',
     },
     'panel.source.apiAddress': {
@@ -497,7 +497,7 @@ export const panelMessages = defineMessages({
         en: 'API address',
     },
     'panel.source.apiKey': {
-        'zh-CN': 'API 密钥',
+        'zh-CN': "API APIキー",
         en: 'API key',
     },
     'panel.source.apiKeyPlaceholder': {
@@ -505,7 +505,7 @@ export const panelMessages = defineMessages({
         en: 'Leave blank when no key is required',
     },
     'panel.source.modelName': {
-        'zh-CN': '模型名称',
+        'zh-CN': "モデル名",
         en: 'Model name',
     },
     // “更多”来源的连接、协议能力和认证界面文案；底层 Pi 标识不作为产品名称展示。
@@ -593,7 +593,7 @@ export const panelMessages = defineMessages({
         en: 'Features you can try: {capabilities}. Availability depends on your model and provider.',
     },
     'panel.source.pi.capability.tools': {
-        'zh-CN': '工具调用',
+        'zh-CN': "ツール呼び出し",
         en: 'tools',
     },
     'panel.source.pi.capability.images': {
@@ -601,7 +601,7 @@ export const panelMessages = defineMessages({
         en: 'Read images',
     },
     'panel.source.pi.capability.structured': {
-        'zh-CN': '格式化输出',
+        'zh-CN': "フォーマット出力",
         en: 'Structured output',
     },
     'panel.source.pi.contextWindow': {
@@ -623,7 +623,7 @@ export const panelMessages = defineMessages({
         en: 'Enter a positive integer context window. It is required when the model catalog has no value.',
     },
     'panel.source.pi.error.unknownProvider': {
-        'zh-CN': '“更多”中的未知来源“{provider}”；请重新选择来源。',
+        'zh-CN': "“その他”中的未知来源“{provider}”；请重新选择来源。",
         en: 'Unknown provider "{provider}" under More. Select a provider again.',
     },
     'panel.source.pi.error.unsupportedApi': {
@@ -640,7 +640,7 @@ export const panelMessages = defineMessages({
     },
     'panel.source.pi.featureDisabled': {
         'zh-CN':
-            '此构建已关闭“更多”模型来源。已保存的“更多”配置仍会保留；请选择“与插头相同”或“自定义”。',
+            "此构建已关闭“その他”モデル出典。已保存的“その他”配置仍会保留；请选择“プラグと同じ”或“カスタム”。",
         en: 'The More model source is disabled in this build. Saved More-source settings are preserved; select Same as current connection or Custom.',
     },
     'panel.source.pi.maxTokensPositive': {
@@ -671,7 +671,7 @@ export const panelMessages = defineMessages({
     },
     'panel.source.pi.customIncludeBodyHelp': {
         'zh-CN':
-            '服务商要求额外参数时在这里填写，使用 YAML 或 JSON，例如 seed: 123。同名参数会采用这里的值。Google 参数请放在 config 下。不需要时留空；密钥、模型和流式开关请使用对应选项。',
+            "服务商要求额外参数时在这里填写，使用 YAML 或 JSON，例如 seed: 123。同名参数会采用这里的值。Google 参数请放在 config 下。不需要时留空；APIキー、模型和流式开关请使用对应选项。",
         en: 'Add parameters required by your provider as YAML or JSON, for example seed: 123. These values replace matching parameters. Put Google parameters under config. Leave blank when unnecessary; use the dedicated controls for keys, models, and streaming.',
     },
     'panel.source.pi.customExcludeBody': {
@@ -817,11 +817,11 @@ export const panelMessages = defineMessages({
         en: 'Temperature',
     },
     'panel.source.frequencyPenalty': {
-        'zh-CN': '频率惩罚',
+        'zh-CN': "頻度ペナルティ",
         en: 'Frequency penalty',
     },
     'panel.source.presencePenalty': {
-        'zh-CN': '存在惩罚',
+        'zh-CN': "存在ペナルティ",
         en: 'Presence penalty',
     },
     'panel.source.topP': {
@@ -913,7 +913,7 @@ export const panelMessages = defineMessages({
         en: 'Inherit user settings',
     },
     'panel.character.extraModelGroup': {
-        'zh-CN': '额外模型解析',
+        'zh-CN': "追加モデル解析",
         en: 'Extra-model parsing',
     },
     'panel.character.autoRequest': {
