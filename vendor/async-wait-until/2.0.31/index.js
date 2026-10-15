@@ -1,7 +1,0 @@
-/**
- * Bundled by jsDelivr using Rollup v4.62.2 and esbuild v0.28.1.
- * Original file: /npm/async-wait-until@2.0.31/dist/index.esm.js
- *
- * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */
-function E(T,t,i,r){return new(i||(i=Promise))((function(s,u){function m(o){try{n(r.next(o))}catch(e){u(e)}}function c(o){try{n(r.throw(o))}catch(e){u(e)}}function n(o){var e;o.done?s(o.value):(e=o.value,e instanceof i?e:new i((function(a){a(e)}))).then(m,c)}n((r=r.apply(T,[])).next())}))}typeof SuppressedError=="function"&&SuppressedError;class f extends Error{constructor(t){super(t!=null?`Timed out after waiting for ${t} ms`:"Timed out"),Object.setPrototypeOf(this,f.prototype)}}const v=50,y=5e3,d=Number.POSITIVE_INFINITY,p=(T,t,i)=>{var r,s;const u=(r=typeof t=="number"?t:t?.timeout)!==null&&r!==void 0?r:5e3,m=(s=typeof t=="number"?i:t?.intervalBetweenAttempts)!==null&&s!==void 0?s:50;let c,n;return Promise.race([...u!==d?[new Promise(((o,e)=>{c=setTimeout((()=>{e(new f(u))}),u)}))]:[],new Promise(((o,e)=>{const a=()=>E(void 0,void 0,void 0,(function*(){try{const l=yield T();if(l)return void o(l);n=setTimeout(a,m)}catch(l){e(l)}}));a()}))]).finally((()=>{c&&clearTimeout(c),n&&clearTimeout(n)}))};export{v as DEFAULT_INTERVAL_BETWEEN_ATTEMPTS_IN_MS,y as DEFAULT_TIMEOUT_IN_MS,f as TimeoutError,d as WAIT_FOREVER,p as default,p as waitUntil};
